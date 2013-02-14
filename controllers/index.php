@@ -4,4 +4,6 @@
 	require_once('db.php');
 	require_once('tasksModel.php');
 	require_once('taskView.php'); 
+	
+	echo "Site Working";
 ?>
