@@ -1,0 +1,66 @@
+#wrapper{
+	background: #7cb0a9;
+}
+
+
+
+
+/*General CSS Styles*/
+input {
+	background: #c9ac68;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 1px 1px 1px #c9ac68 inset;
+    width:100px;
+    margin-left:3.2%; /*960 / 30px / 10 */
+}
+#fomrsignup{
+size: 50%;
+}
+#signup{
+position:absolute;
+top: 30px;
+left:150px;
+float:left;
+font-family:DBLCDTempBlack !important;
+font-style:bold;
+font-size: 3em;
+color: #c9ac68;
+}
+.label{
+position: absolute;
+width: 32%;
+height: 18%;
+font-family: Baskerville !important;
+font-size: 1.5em;
+}
+#name, #email, #password, #repass{
+color:#956667;
+
+}
+#name{
+	margin-top:100px;
+	margin-left:50px;
+	float:left;
+	clear:none;
+}
+#email{
+	margin-top:150px;
+	margin-left:20px;
+	float:left;
+	clear:none;
+
+}
+#password{
+	margin-top:200px;
+	margin-left:10px;
+	float:left;
+	clear:none;
+}
+#repass{
+	margin-top:250px;
+	margin-left:10px;
+	float:left;
+}
+label input #repass{
+	bottom:200px;
+}

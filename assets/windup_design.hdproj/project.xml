@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<HDProject targetWebDirectory="hd-web" autoAdjustObjects="true" ajaxPageLoading="true" appVersion="1.3.0">
+    <HDPages>
+        <HDPage id="page1" formAction="" formMethod="" title="" color="" onClick="" onTouchStart="" onTouchMove="" onTouchEnd="" onLoad="" onOrientationChange="" onSubmit="" backgroundColor="" backgroundImage="" backgroundGradient="" backgroundRepeat="" backgroundPosition="" backgroundAttachment="" fontFamily="" fontStyle="" fontWeight="" fontSize="" textAlign="" letterSpacing="" lineHeight="" textShadow="" onGET="" onPOST="">
+            <HDContents></HDContents>
+        </HDPage>
+    </HDPages>
+    <HDThemes></HDThemes>
+</HDProject>
