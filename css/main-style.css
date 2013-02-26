@@ -2,8 +2,49 @@
 	background: #7cb0a9;
 }
 
+.ui-body-f{
+max-width:100%;
+background-image: url('../assets/signup_bg_v2.jpg');
+background-repeat:repeat;
+}
+img{
+max-width:100%;
+float:left;
+clear:both;
+}
 
+h1{
+top:30px;
+margin-left:50px;
+float:left;
+clear:both;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size: 2em;
+color:#c9ac68;
 
+	
+}
+h2 {
+top:50px;
+left:100px;
+float:left;
+clear:both;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size: 2em;
+color:#956667;
+
+}
+#signuplink{
+top: 200px;
+left:100px;
+float:left;
+clear:both;
+}
+#signuplink a{
+font-family:Georgia, "Times New Roman", Times, serif;
+color:#956667;	
+
+}
 
 /*General CSS Styles*/
 input {
@@ -16,6 +57,7 @@ input {
 #fomrsignup{
 size: 50%;
 }
+
 #signup{
 position:absolute;
 top: 30px;
@@ -63,4 +105,38 @@ color:#956667;
 }
 label input #repass{
 	bottom:200px;
+}
+
+
+/*Mobile responsive CSS*/
+
+@media only screen and (min-width: 640px){
+	body{
+		max-width:1024px;
+	}
+	h1{
+	top:30px;
+	margin-left:50px;
+	float:left;
+	clear:both;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:2em;
+	color:#c9ac68;	
+	}
+}
+
+@media only screen and (min-width:1024px){
+	body{
+		max-width:2086px;
+	}
+	h1{
+	top:30px;
+	margin-left:150px;
+	float:left;
+	clear:both;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 3em;
+	color:#c9ac68;	
+	}
+	
 }

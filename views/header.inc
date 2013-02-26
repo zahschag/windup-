@@ -12,9 +12,11 @@
 </head> 
 
 <body>
-<div data-role="page" id="index" data-theme="f">
-<h1>This is my home page</h1>
-<div data-role="none">
-Not a member yet? <a href="signup.php">Sign Up </a>
-</div>
+	<div data-role="page" id="index" data-theme="f">
+    	<img src="../assets/winduplogo.png" alt="Wind up App logo" />
+		<h1>Welcome to Wind Up!</h1>
+        
+	<div data-role="none" id="signuplink">
+		<p>Not a member yet? <a href="signup.php">Sign Up </a></p>
+	</div>
 </div>
