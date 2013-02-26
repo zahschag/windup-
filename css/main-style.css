@@ -1,3 +1,13 @@
+/*Color Swatches
+Cream #f1ead7
+muted red #946767
+muted gold #DCCE9C
+muted emerald #7CB1A8
+old gold: #C9AD67
+*/
+
+
+
 #wrapper{
 	background: #7cb0a9;
 }
@@ -6,6 +16,11 @@
 max-width:100%;
 background-image: url('../assets/signup_bg_v2.jpg');
 background-repeat:repeat;
+}
+.ui-body-g{
+	
+max-width:100%;
+background-color:#f1ead7;
 }
 img{
 max-width:100%;

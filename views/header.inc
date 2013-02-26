@@ -12,7 +12,7 @@
 </head> 
 
 <body>
-	<div data-role="page" id="index" data-theme="f">
+	<div data-role="page" id="index" data-theme="g">
     	<img src="../assets/winduplogo.png" alt="Wind up App logo" />
 		<h1>Welcome to Wind Up!</h1>
         
