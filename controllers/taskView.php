@@ -14,7 +14,9 @@
 		public function showDetails($rows){
 			include "views/taskDetails.inc";
 			}
-		
+		public function showMain(){
+			include "views/mainIndex.inc";
+			}
 		};
 
 
