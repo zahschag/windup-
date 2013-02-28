@@ -15,7 +15,10 @@
 	<div data-role="page" id="index" data-theme="g">
     	<img src="assets/winduplogo.png" alt="Wind up App logo" />
 		<h1>Welcome to Wind Up!</h1>
-        
+        <div>
+	<a href="controllers/newTask.php" data-role="button" class="blue-btn" data-theme="g">Add Task</a>
+	<a href="controllers/taskview.php" data-role="button" class="blue-btn" data-theme="g">Your Tasks</a>
+	</div>
 	<div data-role="none" id="signuplink">
 		<p>Not a member yet? <a href="controllers/signup.php">Sign Up </a></p>
 	</div>

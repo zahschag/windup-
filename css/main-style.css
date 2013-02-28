@@ -48,7 +48,7 @@ h2 {
 }
 #signuplink p{
 	top: 200px;
-	margin-left:150px;
+	margin-left:300px;
 	float:left;
 	clear:both;
 }
@@ -141,6 +141,11 @@ label input #repass{
 	float:left;
 	clear:both;
 }
+.blue-btn{
+	margin-left:150px;
+	float:left;
+	clear:both;
+}
 }
 /*CSS styles for devices smaller than 1024px wide*/
 @media only screen and (min-width:1024px){
@@ -158,10 +163,11 @@ label input #repass{
 	}
 	#signuplink p{
 	top: 200px;
-	margin-left:16%; 
+	margin-left:20%; 
 	float:left;
 	clear:both;
 }
+
 	
 }
 /*Buttons for the app */
@@ -208,6 +214,10 @@ label input #repass{
 	font-weight:bold;
 	padding:15px 75px;
 	text-decoration:none;
+	float:left;
+	clear:both;
+	margin-left:250px;
+	
 }.blue-btn:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7cb1a8), color-stop(1, #7cb1a8) );
 	background:-moz-linear-gradient( center top, #7cb1a8 5%, #7cb1a8 100% );

@@ -9,6 +9,5 @@
 	$rows = $model->getTasksList();
 	$view = new TaskView();
 	$view->showHead('Wind up Tasks!');
-	$view->showMain();
 	$view->showFoot();
 ?>

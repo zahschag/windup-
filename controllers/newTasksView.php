@@ -7,12 +7,12 @@
 			}
 		public function showFoot(){
 			include "views/footer.inc";
-		}
-		public function showTasks($rows){
-			include "views/taskList.inc";
 			}
-		public function showDetails($rows){
-			include "views/taskDetails.inc";
+		public function showNewTask($rows){
+			include "views/newTask.inc";
+			}
+		public function showForm($rows){
+			include "views/form.inc";
 			}
 		};
 
