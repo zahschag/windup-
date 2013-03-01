@@ -1,4 +1,6 @@
+
 <?php
+
 	ini_set('display_errors',1);
 	error_reporting(E_ALL);
 	class signup{
@@ -9,7 +11,7 @@
 			include "../views/footer.inc";
 			}
 		public function showForm($rows){
-			include "../views/form.inc";
+			include "../views/newUser.inc";
 			}
 	
 		};

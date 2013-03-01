@@ -1,8 +1,9 @@
 
 
 
-<div data-role="none">
+<form>
 	<a href="controllers/newTask.php" data-role="button" class="blue-btn" data-theme="g">Add Task</a>
-	<a href="controllers/taskview.php" data-role="button" class="blue-btn" data-theme="g">Your Tasks</a>
+	<a href="controllers/taskDetails.php" data-role="button" class="blue-btn" data-theme="g">Your Tasks</a>
 	<a href="controllers/signup.php" data-role="button" class="blue-btn" data-theme="g">Sign Up!</a>
-</div>
+	<a href="controllers/auth.php" data-role="button" class="blue-btn" data-theme="g">Log In!</a>
+</form>

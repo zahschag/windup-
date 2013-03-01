@@ -1,7 +1,10 @@
+
+<div data-role='page' data-theme='g'>
 <?php
 	foreach($rows as $num => $row){
-		$user_id = $row['taskId'];
-		echo "<h3><a href=details.php?id=" .mysql_real_escape_string($user_id) ."</a></h3>"
-		
+		$taskId = $row['taskId'];
+		echo "<h3><a href=../controllers/taskDetails.php?id=" .mysql_real_escape_string($taskId) ."</a></h3>";
 		}
 ?>
+
+</div>

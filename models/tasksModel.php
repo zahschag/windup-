@@ -51,7 +51,7 @@ class TaskModel{
 			return array();
 		}
 /*-------------------------Task create function ------------------------------- */
-public function createNewTask($taskTitle, $task, $taskType, $priority){
+public function createNewTask($taskTitle, $task, $taskType, $priority, $date){
 	$statement = $this->db->prepare("
 		INSERT INTO `tasks`(`taskTitle`, `task`, `taskType`, `priority`, `date`)
 		VALUES(:taskTitle, :task, :taskType, :priority, :date)
@@ -105,7 +105,7 @@ public function deleteTask($id){
 /*---------------------------------------User functions ---------------------------------------------*/
 
 	/*-------------------Create New user function-------------------------*/
-	public function newUser(){
+	public function newUser($name, $lastname, $username, $password){
 		$statement = $this->db->prepare("
 			INSERT INTO `users`(`user_fullname`, `lastname`, `user_name`, `user_password`)
 			VALUES(:name, :lastname, :username, :password)

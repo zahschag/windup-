@@ -1,18 +1,18 @@
 <?php
 	ini_set('display_errors',1);
 	error_reporting(E_ALL);
-	class TaskView{
+	class MainView{
 		public function showHead($pageTitle=''){
-			include "../views/header.inc";
+			include "views/header.inc";
 			}
 		public function showFoot(){
-			include "../views/footer.inc";
+			include "views/footer.inc";
 		}
 		public function showTasks($rows){
-			include "../views/taskList.inc";
+			include "views/taskList.inc";
 			}
 		public function showDetails($rows){
-			include "../views/taskDetails.inc";
+			include "views/taskDetails.inc";
 			}
 		};
 
