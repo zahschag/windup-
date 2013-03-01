@@ -1,18 +1,17 @@
 <?php
 	require_once('db.php');
 	require_once('../models/authModel.php');
-	require_once('authView.php'); 
+	require_once('AuthView.php'); 
 	
 	$model = new AuthModel(mydns, myuser, mypass);
-	$view = new authView();
+	$view = new AuthView();
 	
-	$username = (isset($_POST['username']))? '' : strtolower(trim($_POST['username']));
-	$password = (isset($_POST['Password']))? '' : trim( $_POST['Password']);
+	$username = (isset($_POST['username'])) ? '' : strtolower(trim($_POST['username']));
+	$password = (isset($_POST['password'])) ? '' : trim( $_POST['password']);
 	
 	$contentPage = 'form';
 	$user= NULL;
 	
-	session_start();
 		if(!empty($_SESSION['userInfo'])){
 			$contentPage = 'success';
 			$user= $_SESSION['userInfo'];

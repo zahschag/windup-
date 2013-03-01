@@ -12,14 +12,14 @@ Class AuthModel{
 	//un = username
 	//pw = password
 	/*-------------------------Get's the username and the password--------------------------*/
-	public function getUserByNamePass($un, $pw){
+	public function getUserByNamePass($name, $pass){
 		$stmt = $this->db->prepare("
-			SELECT `user_is` AS id, `user_name` AS username, `user_fullname AS fullname
-			FROM users
-			WHERE(`user_name` = :username)
-				AND(`user_pass` = :password)
+			SELECT `user_id` AS id, `user_name` AS username, `user_fullname AS fullname
+			FROM `users`
+			WHERE(`user_name` = :user)
+				AND(`user_pass` = :pass)
 		");
-		if($stmt -> execute(array(':username'=> $username, ':username'=>$username))){
+		if($stmt -> execute(array(':user'=> $user, ':pass'=>$pass))){
 			$rows = $stmt->fetchAll(\PDO::FETCH_ALL);
 				if(count($rows)===1){
 					return $rows[0];
