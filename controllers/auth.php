@@ -1,13 +1,14 @@
 <?php
 	require_once('db.php');
+	require_once('connect.php');
 	require_once('../models/authModel.php');
 	require_once('AuthView.php'); 
 	
 	$model = new AuthModel(mydns, myuser, mypass);
 	$view = new AuthView();
 	
-	$username = (isset($_POST['username'])) ? '' : strtolower(trim($_POST['username']));
-	$password = (isset($_POST['password'])) ? '' : trim( $_POST['password']);
+	$un = (isset($_POST['username'])) ? '' : strtolower(trim($_POST['username']));
+	$pw = (isset($_POST['password'])) ? '' : trim( $_POST['password']);
 	
 	$contentPage = 'form';
 	$user= NULL;
@@ -17,8 +18,8 @@
 			$user= $_SESSION['userInfo'];
 			}//end of conditional block
 		
-		if(!empty($username) && !empty($password)){
-			$user = $model->getUserByNamePass($username, $password);
+		if(!empty($un) && !empty($pw)){
+			$user = $model->getUserByNamePass($un, $pw);
 				if(is_array($user)){
 					$contentPage = 'success';
 					$_SESSION['userInfo'] = $user;

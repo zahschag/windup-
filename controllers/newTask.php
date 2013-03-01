@@ -14,5 +14,6 @@
 		
 		$genView->showHead('New Task!');
 		$view->showForm($rows);
+		$genView->showFoot('');
 			
 ?>

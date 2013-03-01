@@ -28,10 +28,10 @@ img{
 }
 
 h1{
-	top:30px;
+	top:20px;
 	margin-left:50px;
 	float:left;
-	clear:right;
+	clear:both;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size: 2em;
 	color:#c9ac68;	
@@ -42,6 +42,10 @@ h2 {
 	color:#956667;
 
 }
+input{
+	float:left;
+	
+	}
 #signuplink p{
 	top: 200px;
 	margin-left:300px;
@@ -88,21 +92,21 @@ label{
 	}
 	h1{
 	top:30px;
-	margin-left:50px;
+	/*margin-left:50px;*/
 	float:left;
 	clear:both;
 	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:2.5em;
+	font-size:2em;
 	color:#c9ac68;	
 	}
 	#signuplink p{
 	top: 100px;
-	margin-left:150px;
+	/*margin-left:150px;*/
 	float:left;
 	clear:both;
 }
 .blue-btn{
-	margin-left:150px;
+	/*margin-left:150px;*/
 	float:left;
 	clear:both;
 }
@@ -112,9 +116,12 @@ label{
 	left:150px;
 	font-family:DBLCDTempBlack !important;
 	font-style:bold;
-	font-size: 3em;
+	font-size: 1em;
 	color: #c9ac68;
 }
+input{
+	float:left;
+	}
 label{
 	font-family: Baskerville !important;
 	font-size: 1.5em;
@@ -154,16 +161,18 @@ label{
 	font-size: 3em;
 	color: #c9ac68;
 }
+input{
+	float:left;
+	}
 label{
-	width: 32%;
-	height: 18%;
 	font-family: Baskerville !important;
 	font-size: 1.5em;
 	color: #946767;
 }
 #name, #lastname, #email, #password{
-	float:left;
-	clear:right;
+	top:50px;
+	float:right;
+	clear:both;
 }	
 }
 /*Buttons for the app */
