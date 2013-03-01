@@ -53,12 +53,11 @@ class TaskModel{
 /*-------------------------Task create function ------------------------------- */
 public function createNewTask($taskTitle, $task, $taskType, $priority){
 	$statement = $this->db->prepare("
-		INSERT INTO `tasks`(`taskTitle`, `task`, `taskType`, `priority`)
-		VALUES(:taskTitle, :task, :taskType, :priority)
+		INSERT INTO `tasks`(`taskTitle`, `task`, `taskType`, `priority`, `date`)
+		VALUES(:taskTitle, :task, :taskType, :priority, :date)
 	");
 	try{
-		if($statement->execute(array(':taskTitle'=>$taskTitle, ':task'=>$task, ':taskType'=>$taskType,':priority'=>$priority))){
-			
+		if($statement->execute(array(':taskTitle'=> $taskTitle, ':task'=> $task, ':taskType'=> $taskType,':priority'=> $priority, ':date' => $date))){
 			$rows = $statement->fetchAll(\PDO::FETCH_ASSOC);
 			return $rows;
 			
