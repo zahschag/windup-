@@ -1,16 +1,24 @@
+<div data-role="page" data-theme="g">
+<a href="../index.php" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true" id="homeIcon">Home</a>
+<h1>New task</h1><br/>
 
-<div data-role="page" id="newTask">
-<h1>new task</h1>
+<div data-role="none">
 
 <form action="?" method="POST">
-<label data-role="label" for="taskTitle">Title:</label>
-	<input data-role="input" type="text" name="title" id="title" maxlength="50" size="50"/><br/> <br/>
-<label data-role="label" for="task">Task</label>
-	<input data-role="input"type="text" name="task" id="task" maxlength="350" size="350"/><br/><br/>
-<label data-role="label" for="taskType">Type</label>
-	<input data-role="input" type="text" name="username" id="username" maxlength="20" size="20"/>
+<label for="title">Title</label>
+	<input data-role="input" type="text" name="title" id="title" maxlength="20" size="20"/><br/> <br/>
 	
-	<input data-role="button" type="button" name="newTask" class="gold-btn"/>
+<label for="task">Task</label>
+	<input data-role="input" class="newForm" type="text" name="task" id="task" maxlength="350" size="350"/>
+	
+<label for="taskType">Type</label><br/><br/>
+	<input data-role="input" class="newForm" type="text" name="username" id="username" maxlength="20" size="20"/>
+	
+<button>
+
+	<input type="submit" value="Submit"/>
+	
+</button>
 </form>
 
 </div>
