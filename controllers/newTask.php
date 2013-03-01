@@ -1,13 +1,15 @@
 <?php
-	
-//Call database, model and view
-	require_once('../controllers/db.php');
+	require_once('db.php');
 	require_once('../models/tasksModel.php');
-	require_once('../controllers/newTaskView'); 
+	require_once('newTasksView.php'); 
 	
-	$model = new TaskModel(mydns, myuser, mypass);
-	$rows = $model->newTaskModel();
+	$model = new taskModel(mydns,myuser,mypass);
 	$view = new newTaskView();
-	$view->showHead('Add new task|Wind up Tasks!');
-	$view->showFoot();
+	$contentPage = 'newTask';
+		if(isset($_POST['taskTitle'],$_POST['task'],$_POST['taskType'])){
+			$newTask = $model->createNewTask($_POST['taskTitle'],$_POST['task'],$_POST['taskType']);
+			}//end of conditional
+		$view->showHead('New Task!');
+		$view->showForm($contentPage);
+		$view->showFoot();
 ?>

@@ -112,7 +112,7 @@ public function deleteTask($id){
 			VALUES(:name, :lastname, :username, :password)
 		");
 		try{
-			if ($statement->execute(array(':name'=>$name, ':lastname'=>$lastname, ':username'=>$username, ':password'=>$password))){
+			if ($statement->execute(array(':name'=> $name, ':lastname'=> $lastname, ':username'=> $username, ':password'=> $password))){
 				$rows = $statement->fetchAll(\PDO::FETCH_ASSOC);
 				return $rows;
 			}//conditional
@@ -128,13 +128,13 @@ public function deleteTask($id){
 		WHERE `userId` = :id
 		");
 			try{
-				if($statement->execute(array(":id"=>$id, ":password"=>$password))){
+				if($statement->execute(array(":id"=> $id, ":password"=> $password))){
 					$rows = $statement->fetchAll(\PDO::FETCH_ASSOC);
 					return $rows;
 					}//conditional
 			}//try
 		catch(\PDOExeption $l){
-			var_dum($l);
+			echo "Query Failed";
 			}//catch
 	}
 }
