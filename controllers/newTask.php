@@ -12,7 +12,7 @@
 			$newTask = $model->createNewTask($_POST['taskTitle'], $_POST['task']);
 		}//end of conditional
 		
-		$genView->showHead('New Task!');
+		//$genView->showHead('New Task!');
 		$view->showForm($rows);
 		$genView->showFoot();
 			

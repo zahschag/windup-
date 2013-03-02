@@ -1,7 +1,10 @@
 
-<div data-role="page" data-theme="f">
+<div data-role="page" data-theme="g">
 
-<h1>Sign Up</h1>
+<div data-role="header"><h1>
+	<a href="../index.php" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true" id="homeIcon">Home</a>
+		<h1>Sign Up</h1>
+</div>
 
 <div data-role="content">
 	<form action="" method="POST">
@@ -20,7 +23,7 @@
 	<label>Password<br/>
 		<input type="password" name="password" id="password" maxlength="20"/>
 	</label><br/><br/>
-	<input type="submit" value="Submit"class="blue-btn"/>
+	<input type="submit" value="Submit" class="blue-btn"/>
 	</form>
 </div>
 

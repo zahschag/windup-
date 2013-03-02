@@ -7,11 +7,11 @@
 	$model = new AuthModel(mydns, myuser, mypass);
 	$view = new AuthView();
 	
-	$un = (isset($_POST['username'])) ? '' : strtolower(trim($_POST['username']));
-	$pw = (isset($_POST['password'])) ? '' : trim( $_POST['password']);
+	$username = $model->getUserByNamePass(isset($_POST['username'])) ? '' : strtolower(trim($_POST ['username']));
+	$password = $model->getUserByNamePass(isset($_POST['password'])) ? '' : trim( $_POST['password']);
 	
 	$contentPage = 'form';
-	$user= NULL;
+	$user= array();
 	
 		if(!empty($_SESSION['userInfo'])){
 			$contentPage = 'success';

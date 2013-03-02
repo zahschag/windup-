@@ -1,4 +1,6 @@
-<h1>Log in!</h1>
+<div data-role="page" data-theme="g">
+
+<div data-role="header"<h1>Log in!</h1></div
 
 <form action="" method="POST">
 
@@ -7,5 +9,6 @@
 <label for="password">Password:</label>
 	<input type="password" name="password" id="password" maxlength="20" size="20"/>
 	<input type="submit" value="Submit"/>
+	
 </form>
 

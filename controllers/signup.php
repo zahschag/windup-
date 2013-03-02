@@ -12,6 +12,7 @@
 		}//end of conditional
 	$view = new TaskView();//Calls the sign up view in the views folder
 	$newTaskView = new signup();
+	//$newTaskView->showHead('Sign Up!');
 	$newTaskView->showForm($rows);
 	$view->showFoot();
 

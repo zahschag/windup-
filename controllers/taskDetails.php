@@ -7,8 +7,8 @@
 	$model = new taskModel(mydns, myuser, mypass);
 	$view = new taskView();
 	$rows = $model->getTasksList();
-	
 	$view->showHead('My Task Details | WindUp! Tasks');
-	$view->showTasks($rows);
+	$view->showDetails($rows);
+	$view->showFoot();
 
 ?>
