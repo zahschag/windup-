@@ -51,13 +51,13 @@ class TaskModel{
 			return array();
 		}
 /*-------------------------Task create function ------------------------------- */
-public function createNewTask($taskTitle, $task, $taskType, $priority, $date){
+public function createNewTask($taskTitle, $task){
 	$statement = $this->db->prepare("
-		INSERT INTO `tasks`(`taskTitle`, `task`, `taskType`, `priority`, `date`)
-		VALUES(:taskTitle, :task, :taskType, :priority, :date)
+		INSERT INTO `tasks`(`taskTitle`, `task`)
+		VALUES(:taskTitle, :task)
 	");
 	try{
-		if($statement->execute(array(':taskTitle'=> $taskTitle, ':task'=> $task, ':taskType'=> $taskType,':priority'=> $priority, ':date' => $date))){
+		if($statement->execute(array(':taskTitle'=> $taskTitle, ':task'=> $task))){
 			$rows = $statement->fetchAll(\PDO::FETCH_ASSOC);
 			return $rows;
 			
@@ -105,13 +105,13 @@ public function deleteTask($id){
 /*---------------------------------------User functions ---------------------------------------------*/
 
 	/*-------------------Create New user function-------------------------*/
-	public function newUser($name, $lastname, $username, $password){
+	public function newUser(){
 		$statement = $this->db->prepare("
-			INSERT INTO `users`(`user_fullname`, `lastname`, `user_name`, `user_password`)
-			VALUES(:name, :lastname, :username, :password)
+			INSERT INTO `users`(`user_id`, `user_fullname`, `lastname`, `email`, `user_name`, `user_password`, `user_salt`, `userStatus`, `userType`) 
+			VALUES (:id, :name, :lastname, :email, :user, :pass, :salt, :status, :utype )
 		");
 		try{
-			if ($statement->execute(array(':name'=> $name, ':lastname'=> $lastname, ':username'=> $username, ':password'=> $password))){
+			if ($statement->execute(array(':name'=> $name, ':lastname'=>$lastname,'$email'=>$email, ':user'=> $username, ':pass'=> $password, ':salt'=>$salt, ':status'=>$status, ':utype'=>$utype))){
 				$rows = $statement->fetchAll(\PDO::FETCH_ASSOC);
 				return $rows;
 			}//conditional

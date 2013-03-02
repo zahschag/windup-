@@ -8,7 +8,7 @@ old gold: #C9AD67
 #wrapper{
 	background: #7cb0a9;
 }
-
+/*jQuery theme Styles */
 .ui-body-f{
 	max-width:100%;
 	background-image: url('../assets/signup_bg_v2.jpg');
@@ -19,26 +19,29 @@ old gold: #C9AD67
 	max-width:100%;
 	background-color:#f1ead7;
 }
-
+.ui-bar-g input{
+	float:left;
+	clear:right;
+	}
+.ui-bar-g{
+	height:100px;
+	}
+/*General Styles */
 img{
 	min-width:50%;
-	max-width:100%;
-	float:left;
-	clear:both;
+	margin-left:40px;
 }
 
 h1{
 	top:20px;
-	margin-left:50px;
-	float:left;
-	clear:both;
+	margin-left:30%;
 	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size: 2em;
+	font-size: 3em;
 	color:#c9ac68;	
 }
 h2 {
 	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size: 2em;
+	font-size: 1.5em;
 	color:#956667;
 
 }
@@ -48,14 +51,12 @@ input{
 	}
 #signuplink p{
 	top: 200px;
-	margin-left:300px;
 	float:left;
 	clear:both;
 }
 #signuplink a{
 	font-family:Georgia, "Times New Roman", Times, serif;
-	color:#956667;	
-
+	color:#956667;
 }
 
 /*General CSS Styles*/
@@ -63,8 +64,8 @@ input {
 	background: #7CB1A8;
     border-radius: 4px 4px 4px 4px;
     box-shadow: 1px 1px 1px #c9ac68 inset;
-    width:50px;
-    margin-left:3.2%; /*960 / 30px / 10 */
+    width:30px;
+    /*margin-left:3.2%; /*960 / 30px / 10 */
 }
 #signup{
 	top: 30px;
@@ -81,7 +82,6 @@ label{
 }
 #name, #lastname, #email, #password{
 	float:left;
-	clear:right;
 }	
 }
 /*Mobile responsive CSS*/
@@ -91,27 +91,18 @@ label{
 		max-width:1024px;
 	}
 	h1{
-	top:30px;
-	/*margin-left:50px;*/
-	float:left;
-	clear:both;
+	top:50px;
+	margin-left:40%;
 	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:2em;
+	font-size:1em;
 	color:#c9ac68;	
 	}
-	#signuplink p{
-	top: 100px;
-	/*margin-left:150px;*/
-	float:left;
-	clear:both;
-}
 .blue-btn{
 	/*margin-left:150px;*/
 	float:left;
 	clear:both;
 }
 #signup{
-	position:absolute;
 	top: 30px;
 	left:150px;
 	font-family:DBLCDTempBlack !important;
@@ -124,41 +115,33 @@ input{
 	}
 label{
 	font-family: Baskerville !important;
-	font-size: 1.5em;
+	font-size: 1em;
 	color: #946767;
 }
 #name, #lastname, #email, #password{
 	float:left;
-	clear:right;
 }	
 }
 /*CSS styles for devices smaller than 1024px wide*/
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1025px){
 	body{
 		max-width:2048px;
 	}
 	h1{
 	top:30px;
-	margin-left:150px;
-	float:left;
-	clear:both;
+	margin-left:50%;
 	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size: 3em;
+	font-size: 2.5em;
 	color:#c9ac68;	
 	}
-	#signuplink p{
-	top: 200px;
-	margin-left:20%; 
-	float:left;
-	clear:both;
-}
+	
 #signup{
 	position:absolute;
 	top: 30px;
 	left:150px;
 	font-family:DBLCDTempBlack !important;
 	font-style:bold;
-	font-size: 3em;
+	font-size: 2.5em;
 	color: #c9ac68;
 }
 input{
@@ -166,7 +149,7 @@ input{
 	}
 label{
 	font-family: Baskerville !important;
-	font-size: 1.5em;
+	font-size: 2.5em;
 	color: #946767;
 }
 #name, #lastname, #email, #password{
@@ -201,7 +184,7 @@ label{
 	position:relative;
 	top:1px;
 }
-.blue-btn {
+.ui-btn-g {
 	-moz-box-shadow:inset 0px 0px 13px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 0px 13px 0px #ffffff;
 	box-shadow:inset 0px 0px 13px 0px #ffffff;
@@ -223,12 +206,12 @@ label{
 	clear:both;
 	margin-left:250px;
 	
-}.blue-btn:hover {
+}.ui-btn-g:hover {
 	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #7cb1a8), color-stop(1, #7cb1a8) );
 	background:-moz-linear-gradient( center top, #7cb1a8 5%, #7cb1a8 100% );
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7cb1a8', endColorstr='#7cb1a8');
 	background-color:#7cb1a8;
-}.blue-btn:active {
+}.ui-btn-g:active {
 	position:relative;
 	top:1px;
 }

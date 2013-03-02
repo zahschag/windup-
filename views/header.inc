@@ -12,6 +12,12 @@
 </head> 
 
 <body>
+	
 	<div data-role="page" id="index" data-theme="g">
-    	<img src="assets/winduplogo.png" alt="Wind up App logo" />
-		<h1>Welcome to Wind Up!</h1>
+    <div data-role="header">
+    <a href="../index.php" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true" id="homeIcon">Home</a>
+    
+   <h1> Welcome to Wind Up!</h1></div>
+    
+    <img src="assets/winduplogo.png" alt="Wind up App logo" />
+    
